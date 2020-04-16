@@ -53,7 +53,9 @@ http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=61491
 
 ### On Github: 
 
-https://github.com/uwescience/git-tutorials-siamcse2017
+https://github.com/rjleveque/git-tutorials-siamcse2017
+
+branch: `uwamath2020`
 
 ---
 
@@ -93,7 +95,6 @@ Many exist on the web if you search, for example:
  - [gitk](https://git-scm.com/docs/gitk) The git repository browser
  - [atom](https://atom.io/) Atom editor developed by Github
  - [git bash prompt](https://github.com/magicmonty/bash-git-prompt) Git information on your bash prompt
-   - Just do: `brew install bash-git-prompt`
  
 ---
 name: install
@@ -164,9 +165,11 @@ name: clone-this-repo
 
 For example, get these slides via:
 ```bash
-git clone https://github.com/uwescience/git-tutorials-siamcse2017
+git clone https://github.com/rjleveque/git-tutorials-siamcse2017
 
 cd git-tutorials-siamcse2017
+git checkout uwamath2020  # checks out a branch
+
 ls -a  # list files, including those "hidden" to see .git
 ```
 
@@ -319,6 +322,24 @@ Now let's try making a new repository.
 For some instructions to do this on your own, see:
 
  - http://swcarpentry.github.io/git-novice/03-create/
+
+ 
+---
+
+# .blue[Some other useful commands]
+ 
+
+```
+    git ls-files`    # show which files are tracked by git
+    git diff --cached   # diffs in files already staged
+    git branch     # list branches
+    
+    git tag NAME  # create tag NAME
+    git tag -l      # list tags
+ 
+    git help
+    git help diff
+```
 
 ???
 
